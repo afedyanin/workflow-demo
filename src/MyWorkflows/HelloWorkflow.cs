@@ -1,6 +1,6 @@
 ﻿using MyWorkflows.Steps;
 using WorkflowCore.Interface;
-// using WorkflowCore.Models;
+using WorkflowCore.Models;
 
 namespace MyWorkflows;
 
@@ -13,7 +13,7 @@ public class HelloWorkflow : IWorkflow
     public void Build(IWorkflowBuilder<object> builder)
     {
         builder
-            //.UseDefaultErrorBehavior(WorkflowErrorHandling.Suspend)
+            .UseDefaultErrorBehavior(WorkflowErrorHandling.Suspend)
             .StartWith<HelloWorld>()
             .Then<GoodbyeWorld>();
     }

@@ -12,12 +12,12 @@ public static class Program
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();
         builder.Services.AddWorkflow();
+        builder.Services.AddWorkflowSteps();
 
         var app = builder.Build();
 
         var host = app.Services.GetRequiredService<IWorkflowHost>();
-        host.RegisterWorkflows();
-
+        host.UseWorkflows();
         host.Start();
 
         if (app.Environment.IsDevelopment())
