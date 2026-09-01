@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/common/" />
+  <Folder Name="/src/">
+    <Project Path="src/MyWorkflows/MyWorkflows.csproj" Id="a35d40a6-02a1-42a5-8685-1104ee9637b7" />
+    <Project Path="src/WebApi/WebApi.csproj" Id="b032fd66-6cb4-4cb1-a9ea-8e4d8207629f" />
+  </Folder>
+</Solution>
